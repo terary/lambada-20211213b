@@ -1,0 +1,150 @@
+{
+  "blueSkies": {
+    "parentId": null,
+    "payload": {
+      "operator": "$or"
+    }
+  },
+  "missingProperty": {
+    "parentId": "blueSkies",
+    "payload": {
+      "value": "missing operator",
+      "subjectId": "firstname"
+    }
+  },
+  "extraProperty": {
+    "parentId": "blueSkies",
+    "payload": {
+      "operator": "$eq",
+      "value": "first child",
+      "subjectId": "firstname",
+      "hiddenField": "Does not belong"
+    }
+  },
+  "invalidSubjectId": {
+    "parentId": "blueSkies",
+    "payload": {
+      "operator": "$eq",
+      "value": "first child",
+      "subjectId": "DOES_NOT_EXIST"
+    }
+  },
+  "invalidOperator": {
+    "parentId": "blueSkies",
+    "payload": {
+      "operator": "$ex",
+      "value": "first child",
+      "subjectId": "lastname"
+    }
+  },
+  "invalidSubjectOperator": {
+    "parentId": "blueSkies",
+    "payload": {
+      "operator": "$lt",
+      "value": "first child",
+      "subjectId": "lastname"
+    }
+  },
+  "validAnyOfOption": {
+    "parentId": "blueSkies",
+    "payload": {
+      "operator": "$anyOf",
+      "value": [
+        "US-SOUTH",
+        "US-EAST"
+      ],
+      "subjectId": "region"
+    }
+  },
+  "invalidAnyOfOption": {
+    "parentId": "blueSkies",
+    "payload": {
+      "operator": "$anyOf",
+      "value": [
+        "CANADA-SOUTH",
+        "MX-NORTH"
+      ],
+      "subjectId": "region"
+    }
+  },
+  "validOneOfOption": {
+    "parentId": "blueSkies",
+    "payload": {
+      "operator": "$oneOf",
+      "value": "GRAPE001",
+      "subjectId": "favoriteFruit"
+    }
+  },
+  "invalidOneOfOption": {
+    "parentId": "blueSkies",
+    "payload": {
+      "operator": "$oneOf",
+      "value": "NOT_AN_OPTION",
+      "subjectId": "favoriteFruit"
+    }
+  },
+  "validString": {
+    "parentId": "blueSkies",
+    "payload": {
+      "operator": "$eq",
+      "value": "this is a string",
+      "subjectId": "lastname"
+    }
+  },
+  "invalidString": {
+    "parentId": "blueSkies",
+    "payload": {
+      "operator": "$eq",
+      "value": 9,
+      "subjectId": "lastname"
+    }
+  },
+  "validDatetime": {
+    "parentId": "blueSkies",
+    "payload": {
+      "operator": "$eq",
+      "value": "2021-06-29T23:32:32-07:15",
+      "subjectId": "startDate"
+    }
+  },
+  "invalidDatetime": {
+    "parentId": "blueSkies",
+    "payload": {
+      "operator": "$eq",
+      "value": "June 29, 2021",
+      "subjectId": "startDate"
+    }
+  },
+  "validDecimal": {
+    "parentId": "blueSkies",
+    "payload": {
+      "operator": "$eq",
+      "value": 59.99,
+      "subjectId": "annualRevenue"
+    }
+  },
+  "invalidDecimal": {
+    "parentId": "blueSkies",
+    "payload": {
+      "operator": "$eq",
+      "value": 5999,
+      "subjectId": "annualRevenue"
+    }
+  },
+  "validInteger": {
+    "parentId": "blueSkies",
+    "payload": {
+      "operator": "$eq",
+      "value": 231,
+      "subjectId": "numberOfEmployees"
+    }
+  },
+  "invalidInteger": {
+    "parentId": "blueSkies",
+    "payload": {
+      "operator": "$eq",
+      "value": "231",
+      "subjectId": "numberOfEmployees"
+    }
+  }
+}

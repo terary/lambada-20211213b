@@ -1,0 +1,253 @@
+{
+  "blueSkies": {
+    "root": {
+      "parentId": null,
+      "payload": {
+        "operator": "$eq",
+        "value": "first child",
+        "subjectId": "firstname"
+      }
+    }
+  },
+  "missingProperty": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "value": "first child",
+        "subjectId": "firstname"
+      }
+    }
+  },
+  "extraProperty": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$eq",
+        "value": "first child",
+        "subjectId": "firstname",
+        "hiddenField": "Does not belong"
+      }
+    }
+  },
+  "invalidSubjectId": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$eq",
+        "value": "first child",
+        "subjectId": "DOES_NOT_EXIST"
+      }
+    }
+  },
+  "invalidOperator": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$ex",
+        "value": "first child",
+        "subjectId": "lastname"
+      }
+    }
+  },
+  "invalidSubjectOperator": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$lt",
+        "value": "first child",
+        "subjectId": "lastname"
+      }
+    }
+  },
+  "validAnyOfOption": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$anyOf",
+        "value": [
+          "US-SOUTH",
+          "US-EAST"
+        ],
+        "subjectId": "region"
+      }
+    }
+  },
+  "validNanyOfOption": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$nanyOf",
+        "value": [
+          "US-SOUTH",
+          "US-EAST"
+        ],
+        "subjectId": "notAnyOneSubject"
+      }
+    }
+  },
+  "invalidAnyOfOption": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$anyOf",
+        "value": [
+          "CANADA-SOUTH",
+          "MX-NORTH"
+        ],
+        "subjectId": "region"
+      }
+    }
+  },
+  "invalidNanyOfOption": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$nanyOf",
+        "value": [
+          "CANADA-SOUTH",
+          "MX-NORTH"
+        ],
+        "subjectId": "notAnyOneSubject"
+      }
+    }
+  },
+  "validOneOfOption": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$oneOf",
+        "value": "GRAPE001",
+        "subjectId": "favoriteFruit"
+      }
+    }
+  },
+  "invalidOneOfOption": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$oneOf",
+        "value": "NOT_AN_OPTION",
+        "subjectId": "favoriteFruit"
+      }
+    }
+  },
+  "validString": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$eq",
+        "value": "this is a string",
+        "subjectId": "lastname"
+      }
+    }
+  },
+  "invalidString": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$eq",
+        "value": 9,
+        "subjectId": "lastname"
+      }
+    }
+  },
+  "validDatetime": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$eq",
+        "value": "2021-06-29T23:32:32-07:15",
+        "subjectId": "startDate"
+      }
+    }
+  },
+  "invalidDatetime": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$eq",
+        "value": "June 29, 2021",
+        "subjectId": "startDate"
+      }
+    }
+  },
+  "validDecimal": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$eq",
+        "value": 59.99,
+        "subjectId": "annualRevenue"
+      }
+    }
+  },
+  "invalidDecimal": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$eq",
+        "value": 5999,
+        "subjectId": "annualRevenue"
+      }
+    }
+  },
+  "validInteger": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$eq",
+        "value": 231,
+        "subjectId": "numberOfEmployees"
+      }
+    }
+  },
+  "invalidInteger": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$eq",
+        "value": "231",
+        "subjectId": "numberOfEmployees"
+      }
+    }
+  },
+  "invalidIsNullWithValue": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$isNull",
+        "value": "231",
+        "subjectId": "isNullSubject"
+      }
+    }
+  },
+  "invalidIsNullWithoutValue": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$isNull",
+        "subjectId": "isNullSubject"
+      }
+    }
+  },
+  "validIsNullWithNullValue": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$isNull",
+        "value": null,
+        "subjectId": "isNullSubject"
+      }
+    }
+  },
+  "validIsEmpty": {
+    "predicateJson": {
+      "parentId": null,
+      "payload": {
+        "operator": "$empty",
+        "value": "",
+        "subjectId": "isEmpySubject"
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "flatFileTest": {
+    "parentId": null,
+    "payload": {
+      "operator": "$and"
+    }
+  },
+  "flatFileTest:0": {
+    "parentId": "flatFileTest",
+    "payload": {
+      "operator": "$eq",
+      "value": "first child",
+      "subjectId": "firstName"
+    }
+  },
+  "flatFileTest:1": {
+    "parentId": "flatFileTest",
+    "payload": {
+      "operator": "$or"
+    }
+  },
+  "flatFileTest:1:2": {
+    "parentId": "flatFileTest:1",
+    "payload": {
+      "operator": "$eq",
+      "value": "first grandchild",
+      "subjectId": "firstName"
+    }
+  },
+  "flatFileTest:1:3": {
+    "parentId": "flatFileTest:1",
+    "payload": {
+      "operator": "$eq",
+      "value": "second grandchild",
+      "subjectId": "firstName"
+    }
+  },
+  "flatFileTest:2": {
+    "parentId": "flatFileTest",
+    "payload": {
+      "operator": "$eq",
+      "value": "second child",
+      "subjectId": "firstName"
+    }
+  },
+  "flatFileTest:3": {
+    "parentId": "flatFileTest",
+    "payload": {
+      "operator": "$nand"
+    }
+  },
+  "flatFileTest:3:0": {
+    "parentId": "flatFileTest:3",
+    "payload": {
+      "value": "Should not be read",
+      "subjectId": "isEmptySubject",
+      "operator": "$empty"
+    }
+  },
+  "flatFileTest:3:1": {
+    "parentId": "flatFileTest:3",
+    "payload": {
+      "value": null,
+      "subjectId": "isNullSubject",
+      "operator": "$isNull"
+    }
+  },
+  "flatFileTest:4": {
+    "parentId": "flatFileTest",
+    "payload": {
+      "operator": "$nor"
+    }
+  },
+  "flatFileTest:4:0": {
+    "parentId": "flatFileTest:4",
+    "payload": {
+      "value": "Not Equal to This",
+      "subjectId": "notEqualSubject",
+      "operator": "$ne"
+    }
+  },
+  "flatFileTest:4:1": {
+    "parentId": "flatFileTest:4",
+    "payload": {
+      "value": null,
+      "subjectId": "isNullSubject",
+      "operator": "$isNull"
+    }
+  }
+}

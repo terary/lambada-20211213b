@@ -1,0 +1,306 @@
+{
+  "datatypeMissing": {
+    "region": {
+      "validOperators": {
+        "$gt": true
+      },
+      "defaultLabel": "Region"
+    }
+  },
+  "datatypeNotSupported": {
+    "region": {
+      "validOperators": {
+        "$gt": true
+      },
+      "datatype": "something",
+      "defaultLabel": "Region"
+    }
+  },
+  "missingOperatorLabelNotString": {
+    "region": {
+      "validOperators": {
+        "$gt": true
+      },
+      "datatype": "string"
+    }
+  },
+  "missingOperatorLabelNotPresent": {
+    "region": {
+      "validOperators": {
+        "$gt": true
+      },
+      "datatype": "string"
+    }
+  },
+  "missingOperatorLabelNull": {
+    "region": {
+      "validOperators": {
+        "$gt": true
+      },
+      "datatype": "string",
+      "defaultLabel": null
+    }
+  },
+  "invalidOperator": {
+    "region": {
+      "validOperators": {
+        "$eqx": true,
+        "$gt": true
+      },
+      "datatype": "string",
+      "defaultLabel": "Region"
+    }
+  },
+  "badOptionOptionListInvalidValue": {
+    "region": {
+      "validOperators": {
+        "$anyOf": {
+          "optionList": [
+            {
+              "label": "US West",
+              "value": []
+            }
+          ]
+        }
+      },
+      "datatype": "string",
+      "defaultLabel": "Region"
+    }
+  },
+  "badOptionOptionListBadLabelName": {
+    "region": {
+      "validOperators": {
+        "$eq": true,
+        "$anyOf": {
+          "optionList": [
+            {
+              "label_bad": "US West",
+              "value": "US-WEST"
+            }
+          ]
+        }
+      },
+      "datatype": "string",
+      "defaultLabel": "Region"
+    }
+  },
+  "badOptionOptionListBadLabelValue": {
+    "region": {
+      "validOperators": {
+        "$eq": true,
+        "$anyOf": {
+          "optionList": [
+            {
+              "label": 9,
+              "value": "US-WEST"
+            }
+          ]
+        }
+      },
+      "datatype": "string",
+      "defaultLabel": "Region"
+    }
+  },
+  "badOptionOptionListBadValueName": {
+    "region": {
+      "validOperators": {
+        "$eq": true,
+        "$anyOf": {
+          "optionList": [
+            {
+              "label": "US West",
+              "value_bad": "US-WEST"
+            }
+          ]
+        }
+      },
+      "datatype": "string",
+      "defaultLabel": "Region"
+    }
+  },
+  "badOptionsScalar": {
+    "region": {
+      "validOperators": {
+        "$lte": "anything"
+      },
+      "datatype": "string",
+      "defaultLabel": "Region"
+    }
+  },
+  "badOptionsMultiSelect": {
+    "region": {
+      "validOperators": {
+        "$anyOf": null
+      },
+      "datatype": "string",
+      "defaultLabel": "Region"
+    }
+  },
+  "brokenAnyOfOptionsNoOptionList": {
+    "region": {
+      "validOperators": {
+        "$anyOf": {}
+      },
+      "datatype": "string",
+      "defaultLabel": "Region"
+    }
+  },
+  "brokenOneOfOptionsNoOptionList": {
+    "region": {
+      "validOperators": {
+        "$oneOf": {}
+      },
+      "datatype": "string",
+      "defaultLabel": "Region"
+    }
+  },
+  "blueSkies": {
+    "firstname": {
+      "validOperators": {
+        "$eq": true,
+        "$gt": true,
+        "$like": true
+      },
+      "datatype": "string",
+      "defaultLabel": "First Name"
+    },
+    "lastname": {
+      "validOperators": {
+        "$eq": true,
+        "$gt": true,
+        "$like": true
+      },
+      "datatype": "string",
+      "defaultLabel": "Last Name"
+    },
+    "annualRevenue": {
+      "validOperators": {
+        "$eq": true,
+        "$gt": true,
+        "$gte": true,
+        "$lt": true,
+        "$lte": true
+      },
+      "datatype": "decimal",
+      "defaultLabel": "Annual Revenue"
+    },
+    "numberOfEmployees": {
+      "validOperators": {
+        "$eq": true,
+        "$gt": true,
+        "$gte": true,
+        "$lt": true,
+        "$lte": true
+      },
+      "datatype": "integer",
+      "defaultLabel": "Number of Employees"
+    },
+    "region": {
+      "validOperators": {
+        "$eq": true,
+        "$anyOf": {
+          "optionList": [
+            {
+              "label": "US West",
+              "value": "US-WEST"
+            },
+            {
+              "label": "US East",
+              "value": "US-EAST"
+            },
+            {
+              "label": "US South",
+              "value": "US-SOUTH"
+            },
+            {
+              "label": "US North",
+              "value": "US-NORTH"
+            }
+          ]
+        }
+      },
+      "datatype": "string",
+      "defaultLabel": "Region"
+    },
+    "favoriteFruit": {
+      "validOperators": {
+        "$eq": true,
+        "$oneOf": {
+          "optionList": [
+            {
+              "label": "Apples",
+              "value": "APPLE001"
+            },
+            {
+              "label": "Grapes",
+              "value": "GRAPE001"
+            },
+            {
+              "label": "Oranges",
+              "value": "ORANGE001"
+            }
+          ]
+        }
+      },
+      "datatype": "string",
+      "defaultLabel": "Favorite Fruit"
+    },
+    "favoriteNumber": {
+      "validOperators": {
+        "$eq": true,
+        "$oneOf": {
+          "optionList": [
+            {
+              "label": "One",
+              "value": 1
+            },
+            {
+              "label": "Two",
+              "value": 2
+            },
+            {
+              "label": "Three",
+              "value": 3
+            }
+          ]
+        }
+      },
+      "datatype": "string",
+      "defaultLabel": "Favorite Number"
+    },
+    "startDate": {
+      "validOperators": {
+        "$eq": true,
+        "$gt": true,
+        "$gte": true,
+        "$lt": true,
+        "$lte": true
+      },
+      "datatype": "datetime",
+      "defaultLabel": "Start Date"
+    },
+    "nanyThese": {
+      "validOperators": {
+        "$eq": true,
+        "$nanyOf": {
+          "optionList": [
+            {
+              "label": "One",
+              "value": 1
+            },
+            {
+              "label": "Two",
+              "value": 2
+            },
+            {
+              "label": "Three",
+              "value": 3
+            }
+          ]
+        }
+      },
+      "datatype": "string",
+      "defaultLabel": "None of These"
+    }
+  }
+}

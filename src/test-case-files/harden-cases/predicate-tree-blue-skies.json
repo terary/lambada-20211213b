@@ -1,0 +1,38 @@
+{
+  "flatFileTest": {
+    "parentId": null,
+    "payload": {
+      "operator": "$and"
+    }
+  },
+  "flatFileTest:0": {
+    "parentId": "flatFileTest",
+    "payload": {
+      "operator": "$eq",
+      "value": "rubble",
+      "subjectId": "lastName"
+    }
+  },
+  "flatFileTest:1": {
+    "parentId": "flatFileTest",
+    "payload": {
+      "operator": "$or"
+    }
+  },
+  "flatFileTest:1:2": {
+    "parentId": "flatFileTest:1",
+    "payload": {
+      "operator": "$eq",
+      "value": "Barney",
+      "subjectId": "firstName"
+    }
+  },
+  "flatFileTest:1:3": {
+    "parentId": "flatFileTest:1",
+    "payload": {
+      "operator": "$eq",
+      "value": "Betty",
+      "subjectId": "firstName"
+    }
+  }
+}

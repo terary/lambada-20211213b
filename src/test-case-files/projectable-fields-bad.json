@@ -1,0 +1,48 @@
+{
+  "subjectIdMissingIsSortable": {
+    "missingIsSortable": {
+      "datatype": "string",
+      "defaultLabel": "First Name"
+    }
+  },
+  "subjectIdMissingDatatype": {
+    "subjectId": {
+      "isSortable": true,
+      "defaultLabel": "Start Date"
+    }
+  },
+  "subjectIdMissingDefaultLabel": {
+    "subjectId": {
+      "isSortable": true,
+      "datatype": "string"
+    }
+  },
+  "wrongDataTypeSortable": {
+    "subjectId": {
+      "isSortable": 1,
+      "datatype": "string",
+      "defaultLabel": "Start Date"
+    }
+  },
+  "wrongDataTypeDefaultLabel": {
+    "subjectId": {
+      "isSortable": true,
+      "datatype": "string",
+      "defaultLabel": 9
+    }
+  },
+  "wrongDataTypeUnsupported": {
+    "subjectId": {
+      "isSortable": true,
+      "datatype": "object",
+      "defaultLabel": "unsupported  Type"
+    }
+  },
+  "blueSkies": {
+    "startDate": {
+      "isSortable": true,
+      "datatype": "string",
+      "defaultLabel": "Start Date"
+    }
+  }
+}

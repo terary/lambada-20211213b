@@ -1,0 +1,53 @@
+{
+  "firstName": {
+    "validOperators": {
+      "$eq": true,
+      "$gt": true,
+      "$like": true
+    },
+    "datatype": "string",
+    "defaultLabel": "First Name"
+  },
+  "lastName": {
+    "validOperators": {
+      "$eq": true,
+      "$gt": true,
+      "$like": true
+    },
+    "datatype": "string",
+    "defaultLabel": "Last Name"
+  },
+  "isNullSubject": {
+    "validOperators": {
+      "$eq": true,
+      "$gt": true,
+      "$like": true,
+      "$isNull": true
+    },
+    "datatype": "string",
+    "defaultLabel": "Can be null"
+  },
+  "notEqualSubject": {
+    "validOperators": {
+      "$eq": true,
+      "$gt": true,
+      "$like": true,
+      "$isNull": true,
+      "$ne": true
+    },
+    "datatype": "string",
+    "defaultLabel": "Can be not equal"
+  },
+  "isEmptySubject": {
+    "validOperators": {
+      "$eq": true,
+      "$gt": true,
+      "$like": true,
+      "$isNull": true,
+      "$ne": true,
+      "$empty": true
+    },
+    "datatype": "string",
+    "defaultLabel": "Can be empty"
+  }
+}

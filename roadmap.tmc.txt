@@ -1,0 +1,8 @@
+
+- fromJson
+  should be  fromJson{subjectDictionary, predicateTree?}
+  no reason for two fromEmpty fromJson
+
+
+Double check visitors are exported? in usable form
+import { PredicateIdsBranches } from "gabby-query-protocol-lib/dist/Predicates/TreeVisitors/PredicateIdsBranches";
